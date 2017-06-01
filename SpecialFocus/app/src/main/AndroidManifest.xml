@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sepcialfocus.android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".BaseApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.sepcialfocus.android.ui.MainActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.sepcialfocus.android.ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sepcialfocus.android.ui.article.ArticleDetailActivity"
+            android:hardwareAccelerated="false"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.DragSortMenuActivity"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.MineActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.HistoryActivity"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.FeedbackActivity"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.ReviewAdActivity"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.SettingActivity"/>
+        <activity
+            android:name="com.sepcialfocus.android.ui.settting.FontSizeActivity"/>
+        <service
+            android:name="com.sepcialfocus.android.services.UpgradeService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.sepcialfocus.android.services.NotificationService"
+            android:exported="false" >
+        </service>
+        <receiver
+            android:name="com.sepcialfocus.android.receiver.ArticleReceiver">
+            <intent-filter >
+                <action android:name="com.sepcialfocus.android.receive"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sepcialfocus.android.receiver.CheckUpdateReceiver">
+            <intent-filter >
+                <action android:name="com.sepcialfocus.android.check.article"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 有米ad start-->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <receiver
+            android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- 有米ad end -->
+
+        <!-- 友盟分享 start-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+                <data android:scheme="tencent1104890846" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 微信 -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟分享end -->
+
+        <meta-data android:value="55fdeda267e58eaa770002bd" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="baidu" android:name="UMENG_CHANNEL"/>
+    </application>
+</manifest>

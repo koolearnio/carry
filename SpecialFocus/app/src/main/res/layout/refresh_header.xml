@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+	<RelativeLayout
+	    android:id="@+id/image_rl"
+	    android:layout_width="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_height="wrap_content">
+	    <ImageView
+	        android:id="@+id/pull_to_refresh_loading_img"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:visibility="gone" />
+	
+	    <ImageView
+	        android:id="@+id/pull_to_refresh_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:visibility="visible" />
+	</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_rl"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/font_size_24px"
+        android:visibility="visible" />
+
+</RelativeLayout>

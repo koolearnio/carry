@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+     <include 
+        layout="@layout/app_header"/>
+      <RadioGroup 
+          android:id="@+id/content_text_size_rg"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:background="@color/white"
+          android:orientation="vertical">
+          <RadioButton 
+              android:id="@+id/text_smallest_rb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="小号"
+              android:button="@null"
+              style="@style/font_rb_style"/>
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@drawable/list_gray_line"/>
+          <RadioButton 
+              android:id="@+id/text_smaller_rb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="中号"
+              android:button="@null"
+              style="@style/font_rb_style"/>
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@drawable/list_gray_line"/>
+          
+          <RadioButton 
+              android:id="@+id/text_normal_rb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="大号"
+              android:button="@null"
+              style="@style/font_rb_style"/>
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@drawable/list_gray_line"/>
+          <RadioButton 
+              android:id="@+id/text_larger_rb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="特大号"
+              android:button="@null"
+              style="@style/font_rb_style"/>
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@drawable/list_gray_line"/>
+          <RadioButton 
+              android:id="@+id/text_largest_rb"
+              android:text="巨大号"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:button="@null"
+              style="@style/font_rb_style"/>
+      </RadioGroup>
+
+</LinearLayout>
+

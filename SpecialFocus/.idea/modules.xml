@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpecialFocus.iml" filepath="$PROJECT_DIR$/SpecialFocus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CarryIO_Sample/carry_plugin/carryio_plugin.iml" filepath="$PROJECT_DIR$/../CarryIO_Sample/carry_plugin/carryio_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CarryIO_Sample/carry_sdk/carryio_sdk.iml" filepath="$PROJECT_DIR$/../CarryIO_Sample/carry_sdk/carryio_sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KoolearnIO_SDK_Sample/koolearnio_plugin/koolearnio_plugin.iml" filepath="$PROJECT_DIR$/../KoolearnIO_SDK_Sample/koolearnio_plugin/koolearnio_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../KoolearnIO_SDK_Sample/koolearnio_sdk/koolearnio_sdk.iml" filepath="$PROJECT_DIR$/../KoolearnIO_SDK_Sample/koolearnio_sdk/koolearnio_sdk.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.tools.build:gradle:2.3.0'
+    compile 'org.javassist:javassist:3.20.0-GA'
+//    compile(name:'koolearnio_sdk-release',ext:'aar')
+//    compile files('../koolearnio_sdk/mylibs/libs/koolearnio_sdk.jar')
+//    compile files('../koolearnio_sdk/mylibs/libs/fastjson-1.2.9.jar')
+}
+
+repositories {
+//    flatDir{
+////        dirs '../koolearnio_sdk/build/outputs/aar'
+//    }
+    mavenCentral()
+}
+
+group='com.carryio.gradle.plugin'
+version='1.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}

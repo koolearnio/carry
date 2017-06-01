@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/app_bg_color">
+
+    <include layout="@layout/app_header"/>
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none">
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/head_bg"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+			</LinearLayout>
+			
+			<RelativeLayout 
+			    android:id="@+id/mine_history_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_history_str"
+			        android:gravity="center_vertical"
+			        android:drawableLeft="@drawable/mine_deal_history"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:focusable="false"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_margin_linear"/>
+			<RelativeLayout 
+			    android:id="@+id/mine_columns_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_columns_str"
+			        android:gravity="center_vertical"
+			        android:drawableLeft="@drawable/mine_reservation"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_margin_linear"/>
+			<RelativeLayout 
+			    android:id="@+id/mine_favorite_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_favorite_str"
+			        android:gravity="center_vertical"
+			        android:drawableLeft="@drawable/mine_favorite"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:id="@+id/dis_address_right_img"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_linear"/>
+			<include layout="@layout/common_line_margintop_linear"/>
+			<RelativeLayout 
+			    android:id="@+id/mine_feedback_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:gravity="center_vertical"
+			        android:text="@string/mine_feedback_str"
+			        android:drawableLeft="@drawable/mine_look_fee"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:id="@+id/dis_express_right_img"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:focusable="false"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<!-- 
+			<RelativeLayout 
+			    android:id="@+id/mine_msg_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_pushmsg_str"
+			        android:drawableLeft="@drawable/mine_message"
+			        android:gravity="center_vertical"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			 -->
+			<include layout="@layout/mine_line_margin_linear"/>
+			<RelativeLayout 
+			    android:id="@+id/mine_share_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_share_str"
+			        android:gravity="center_vertical"
+			        android:drawableLeft="@drawable/mine_share"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:focusable="false"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_linear"/>
+			<include layout="@layout/common_line_margintop_linear"/>
+			<!-- 
+			<RelativeLayout 
+			    android:id="@+id/mine_about_us_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_aboutus_str"
+			        android:drawableLeft="@drawable/mine_card_desc"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:gravity="center_vertical"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_margin_linear"/>
+			 -->
+			<RelativeLayout 
+			    android:id="@+id/mine_review_ad_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_review_ad_str"
+			        android:drawableLeft="@drawable/mine_card_desc"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:gravity="center_vertical"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_margin_linear"/>
+			<RelativeLayout 
+			    android:id="@+id/mine_setting_rl"
+			    android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@color/normal_background"
+		    	android:padding="@dimen/common_small_margin">
+			    <TextView style="@style/common_mid_black_textview"
+			        android:text="@string/mine_setting_str"
+			        android:drawableLeft="@drawable/mine_setting"
+			        android:paddingLeft="@dimen/common_mini_margin"
+			        android:gravity="center_vertical"
+			        android:drawablePadding="@dimen/common_menu_drawable_padding"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentLeft="true"/>
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:focusable="false"
+			        android:background="@drawable/right_jump"/>
+			</RelativeLayout> 
+			<include layout="@layout/mine_line_linear"/>
+			
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

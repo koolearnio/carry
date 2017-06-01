@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"
+       android:background="#ffffff" >
+       <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center">
+          <ImageView
+              android:id="@+id/ivLogo"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:src="@drawable/icon"
+              android:layout_marginTop="10dip" 
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="10dp"/>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_marginRight="10dip">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_name"
+                  android:textSize="15dp"/>
+              <ProgressBar
+                  android:id="@+id/pbDownload"
+                  android:layout_width="fill_parent"
+                  android:layout_height="12dip"
+                  android:progress="0"
+                  android:max="100"
+                  style="?android:attr/progressBarStyleHorizontal"  />
+              <TextView
+                  android:id="@+id/tvProcess"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="已下载0%"
+                  android:textSize="12dp"/>
+         </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,3 @@
+include ':app',':carry_sdk','carry_plugin'
+project(':carry_sdk').projectDir = new File(settingsDir,'../CarryIO_Sample/carry_sdk')
+project(':carry_plugin').projectDir = new File(settingsDir,'../CarryIO_Sample/carry_plugin')

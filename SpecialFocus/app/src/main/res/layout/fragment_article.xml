@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+<!-- 
+    <android.support.v4.widget.SwipeRefreshLayout 
+        android:id="@+id/swipe_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	        <ListView
+	            android:id="@+id/article_listview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@color/app_bg_color"
+	            android:divider="@null"
+	            android:dividerHeight="1px" >
+	        </ListView>
+	</android.support.v4.widget.SwipeRefreshLayout>
+======= -->
+    <com.sepcialfocus.android.ui.widget.PullToRefreshView
+        android:id="@+id/article_pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/article_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_color"
+            android:divider="#999999"
+            android:dividerHeight="2px" >
+        </ListView>
+    </com.sepcialfocus.android.ui.widget.PullToRefreshView>
+
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_loading_data"/>
+</RelativeLayout>

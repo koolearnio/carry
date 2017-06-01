@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarryIO_Sample.iml" filepath="$PROJECT_DIR$/CarryIO_Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carry_plugin/carry_plugin.iml" filepath="$PROJECT_DIR$/carry_plugin/carry_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carry_sdk/carry_sdk.iml" filepath="$PROJECT_DIR$/carry_sdk/carry_sdk.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<head>
+	<meta name="viewport"
+　　content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta content="text/html; charset=utf8" http-equiv="Content-Type">
+</head>
+<body>
+	<div id="title">
+	</div>
+	<div id="span">
+	</div>
+	<div id="article" style="font-size:35px">
+	</div>
+	<div id="footer">
+	<a style="width:80%; height:100px;color:white;font-size:36px;line-height:100px; display: block;background:#ff5c3d url(http://enjoyread.b0.upaiyun.com/testimg/pink.png) repeat-y;border-radius:12px; text-align: center; margin:50px auto;text-decoration:none;" href="http://www.pgyer.com/enjoyread">下载悦读圈一起阅读吧！</a>
+	</div>
+</body>
+

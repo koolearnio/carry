@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <drawable name="blank">#00ffffff</drawable>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blank">#00ffffff</color>
+    <color name="app_shouye_color">#e9fbf7</color>
+    <color name="app_color_theme">#27C5A4</color>
+    <color name="app_shouye_bg_color">#ffffff</color>
+    <color name="person_center_text">#565656</color>
+    <color name="micro_series_bg">#909e9e9e</color>
+    <color name="guide_login_back">#f8f8f8</color>
+
+    <color name="orange">#FF9900</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+
+    <color name="record_title_1">#F7F7F7</color>
+    <color name="record_title_2">#D2D2D2</color>
+
+
+
+    <color name="diving_gray">#eae9e7</color>
+    <color name="divideline_gray">#c0c0c0</color>
+    <color name="pop_color">#7D7D7D</color>
+    <color name="zt_text_bg">#768082</color>
+
+    <color name="app_color">#27C5A4</color>
+    <color name="app_gray">#f4f4f4</color>
+    <color name="radiobutton_checked">#27C5A4</color>
+    <color name="radiobutton_normal">#ffffff</color>
+
+    <!-- app分割线颜色 -->
+    <color name="app_divider_color">#d7d7d7</color>
+    <color name="app_divider_green_color">#27c5a4</color>
+    <color name="app_divider_c8">#c8c8c8</color>
+    <color name="app_divider_d7">#d7d7d7</color>
+    <color name="common_divider_color">#FFCCCCCC</color>
+
+    <!-- app常用区域背景色 -->
+    <color name="app_bg_color">#F4F4F4</color>
+    <color name="normal_background">#FFFdFEFF</color>
+
+    <!-- app常用字体颜色 -->
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_green">#27c5a4</color>
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_light_black">#666666</color>
+    <color name="text_color_gray">#b8b8b8</color>
+    <color name="text_color_grayer">#999999</color>
+    <color name="text_color_grayest">#c6c6c6</color>
+
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+
+
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="subscribe_activity_bg_night">#ff252525</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="subscribe_seperate_line_night">#ff464646</color>
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <color name="default_text_night">#ff747474</color>
+    <color name="default_text">#ff454545</color>
+
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+
+    <item name="subscribe_item_text_color_normal_night" type="color">@color/default_text_night</item>
+
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_focused_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_stroke_night">#ff464646</color>
+    <color name="subscribe_item_drag_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_focused_bg_night">#ff252525</color>
+    <color name="subscribe_item_focused_stroke_night">#ff464646</color>
+    <color name="subscribe_item_selected_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_disabled_bg_night">#ff2b2b2b</color>
+
+    <item name="subscribe_item_disabled_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+    <item name="subscribe_item_pressed_bg_night" type="color">@color/subscribe_item_disabled_bg_night</item>
+    <item name="subscribe_item_pressed_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+    <item name="subscribe_item_normal_bg_night" type="color">@color/subscribe_item_focused_bg_night</item>
+    <item name="subscribe_item_normal_stroke_night" type="color">@color/subscribe_item_focused_stroke_night</item>
+
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#A2A3A2</color>
+
+    <color name="not_read_text_color">#003e73</color>
+    <color name="has_read_text_color">#8391a6</color>
+
+    <color name="readed_tags_text_color">#b4b4b4</color>
+    <color name="not_read_tags_text_color">#ff00ff</color>
+    <color name="read_content_text_color">#888888</color>
+    <color name="not_read_content_text_color">#666666</color>
+    <color name="title_color">#656a7b</color>
+</resources>

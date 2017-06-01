@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout 
+        android:id="@+id/swipe_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	        <com.sepcialfocus.android.widgets.swiptlistview.SwipeListView
+	            android:id="@+id/article_listview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@color/app_bg_color"
+	            android:divider="@drawable/list_gray_line"
+	            android:dividerHeight="1px" 
+	            android:footerDividersEnabled="false"
+	            swipe:swipeFrontView="@+id/front"
+	            swipe:swipeBackView="@+id/back"
+	            swipe:swipeDrawableChecked="@drawable/choice_selected"
+	            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+	            swipe:swipeCloseAllItemsWhenMoveList="true"
+	            swipe:swipeMode="none"
+	            swipe:swipeIsDropDownStyle="false"
+	        	swipe:swipeIsOnBottomStyle="true"
+	        	swipe:swipeIsAutoLoadOnBottom="true">
+	        </com.sepcialfocus.android.widgets.swiptlistview.SwipeListView>
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+<!-- 
+    <com.sepcialfocus.android.ui.widget.PullToRefreshView
+        android:id="@+id/article_pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/article_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_color"
+            android:divider="#999999"
+            android:dividerHeight="2px" >
+        </ListView>
+    </com.sepcialfocus.android.ui.widget.PullToRefreshView>
+======= -->
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_loading_data"/>
+    
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_refresh_loading_data"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">悦读圈</string>
+
+    <string-array name="menu_str">
+        <item>最新</item>
+        <item>家事</item>
+        <item>国事</item>
+        <item>天下事</item>
+        <item>男人的事</item>
+        <item>女人的事</item>
+        <item>有趣的事</item>
+        <item>书中事</item>
+        <item>心事</item>
+        <item>读者文摘</item>
+        <item>看点</item>
+        <item>侃点</item>
+        <item>段子</item>
+        <item>经典语句</item>
+    </string-array>
+    <string-array name="menu_url">
+        <item>m/</item>
+        <item>news/1/</item>
+        <item>news/2/</item>
+        <item>news/3/</item>
+        <item>news/4/</item>
+        <item>news/8/</item>
+        <item>news/5/</item>
+        <item>news/11/</item>
+        <item>news/7/</item>
+        <item>news/12/</item>
+        <item>news/9/</item>
+        <item>news/10/</item>
+        <item>news/17/</item>
+        <item>news/13/</item>
+    </string-array>
+
+    <string name="common_back_str">再按一次退出程序</string>
+
+    <string name="version_download_sd_str">无法下载安装文件，请检查SD卡是否挂载</string>
+    <string name="version_checking_str">正在检测，请稍后...</string>
+    <string name="version_dialog_title_str">我们非常卖力的开发出了新版本，是否更新？</string>
+    <string name="version_dialog_sure_str">立即更新</string>
+    <string name="version_dialog_cancle_str">以后再说</string>
+    <string name="version_neednot_str">您当前已经是最新版本</string>
+    <string name="version_cannot_str">无法获取版本更新信息</string>
+    <string name="version_tips_str">系统提示</string>
+
+    <!-- 我的 -->
+    <string name="mine_history_str">阅读记录</string>
+    <string name="mine_favorite_str">我的收藏</string>
+    <string name="mine_columns_str">添加栏目</string>
+    <string name="mine_feedback_str">疯狂吐槽</string>
+    <string name="mine_pushmsg_str">系统公告</string>
+    <string name="mine_share_str">分享</string>
+    <string name="mine_aboutus_str">关于我们</string>
+    <string name="mine_setting_str">设置</string>
+    <string name="mine_review_ad_str">亲，给我们评个分吧</string>
+
+
+    <!-- 设置 -->
+    <string name="setting_no_img_str">无图模式</string>
+    <string name="setting_invisible_window_str">隐藏主页悬浮窗</string>
+    <string name="setting_font_size_str">正文字号</string>
+    <string name="setting_check_version_str">检测新版本</string>
+    <string name="setting_load_recommon_str">下载推荐</string>
+
+    <string name="dev_tips">你好，我是悦读圈产品经理，欢迎您反馈使用产品的感受和建议，24小时之内回复。</string>
+
+    <!-- 下拉刷新  end -->
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_default_text"></string>
+    <string name="drop_down_list_footer_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">无更多信息</string>
+    <string name="image_content">Image</string>
+    <string name="httpError">连接失败,请稍候再试</string>
+</resources>

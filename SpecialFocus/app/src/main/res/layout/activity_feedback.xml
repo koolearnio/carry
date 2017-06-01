@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/app_header"
+        layout="@layout/app_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+	        android:id="@+id/fb_input_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="vertical" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1px"
+	            android:background="@color/umeng_fb_line" />
+	
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:background="#F2F2F2"
+	            android:focusableInTouchMode="true"
+	            android:orientation="horizontal"
+	            android:paddingBottom="8dp"
+	            android:paddingLeft="15dp"
+	            android:paddingRight="15dp"
+	            android:paddingTop="8dp" >
+	
+	            <Button
+	                android:id="@+id/fb_send_btn"
+	                android:layout_width="70dp"
+	                android:layout_height="33dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_centerVertical="true"
+	                android:background="#ffd990"
+	                android:gravity="center"
+	                android:text="@string/umeng_fb_send"
+	                android:textColor="@android:color/white"
+	                android:textSize="16sp" />
+	
+	            <EditText
+	                android:id="@+id/fb_send_content"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_marginRight="10dp"
+	                android:layout_toLeftOf="@id/fb_send_btn"
+	                android:background="@drawable/fb_input_bg"
+	                android:hint="@string/umeng_fb_feedback"
+	                android:minHeight="33dp"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:scrollbars="vertical"
+	                android:textSize="16sp" />
+	        </RelativeLayout>
+	    </LinearLayout>
+	    <android.support.v4.widget.SwipeRefreshLayout 
+	        android:id="@+id/swipe_container"
+			android:layout_above="@id/fb_input_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		        <com.sepcialfocus.android.widgets.swiptlistview.SwipeListView
+		            android:id="@+id/article_listview"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="@color/app_bg_color"
+		            android:divider="@null"
+		            android:footerDividersEnabled="false"
+		            android:dividerHeight="1px" 
+		            swipe:swipeFrontView="@+id/front"
+		            swipe:swipeBackView="@+id/back"
+		            swipe:swipeDrawableChecked="@drawable/choice_selected"
+		            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+		            swipe:swipeCloseAllItemsWhenMoveList="true"
+		            swipe:swipeMode="none"
+		            swipe:swipeIsDropDownStyle="false"
+		        	swipe:swipeIsOnBottomStyle="true"
+		        	swipe:swipeIsAutoLoadOnBottom="true">
+		        </com.sepcialfocus.android.widgets.swiptlistview.SwipeListView>
+		</android.support.v4.widget.SwipeRefreshLayout>
+	
+	<!-- 
+	    <com.sepcialfocus.android.ui.widget.PullToRefreshView
+	        android:id="@+id/article_pullview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        <ListView
+	            android:id="@+id/article_listview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="@color/app_bg_color"
+	            android:divider="#999999"
+	            android:dividerHeight="2px" >
+	        </ListView>
+	    </com.sepcialfocus.android.ui.widget.PullToRefreshView>
+	======= -->
+	    <include 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        layout="@layout/layout_loading_data"/>
+        
+    </RelativeLayout>
+</LinearLayout>
