@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'plugin.carryio'
+apply plugin: 'carryio.plugin'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"

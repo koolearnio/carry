@@ -29,7 +29,8 @@ AppData Collected for BigData
         - [x] 上传插件到本地
         - [x] 示例项目引用本地插件踩吭
     2. 查找onClick方法，并插入carry_sdk中的方法
-        - [x] 插件引用android等库问题原因
+        - [x] 插件引用android等库问题原因（目前为代码写死）
+        - [ ] 通过配置文件获取android sdk，support等本地地址
         - [x] 插件查找指定类的方法
         - [x] 插件获取指定方法的参数名字
         - [x] 插入carry_sdk中引用代码，找不到类(实际是没有找到准确的参数名字)
@@ -38,7 +39,7 @@ AppData Collected for BigData
         - [x] 编译后onCLick插入的代码运行
         - [ ] 指定包名内的onClick方法插入
         - [ ] 去掉指定包名中的onClick方法插入
-        - [ ] 断点调试功能调研
+        - [ ] 断点调试功能调研(看网上好多人可以，尚未试验成功)
         - [ ] 通过注解插入onClick代码（可控）
 
 

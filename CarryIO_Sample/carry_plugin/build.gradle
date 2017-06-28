@@ -19,7 +19,7 @@ repositories {
     mavenCentral()
 }
 
-group='com.carryio.gradle.plugin'
+group='com.carryio.plugin'
 version='1.0.0'
 
 uploadArchives {
